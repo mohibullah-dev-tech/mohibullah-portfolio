@@ -1,14 +1,23 @@
+import Container from "./components/common/Container";
+import SectionTitle from "./components/common/SectionTitle";
+import Button from "./components/ui/Button";
+
 const App = () => {
   return (
-    <div className="min-h-screen">
-      <h1 className="pt-20 text-center text-5xl font-bold">
-        Portfolio Loading...
-      </h1>
+    <main className="min-h-screen py-20">
+      <Container>
+        <SectionTitle
+          title="Professional Portfolio"
+          subtitle="Building a modern React portfolio step by step."
+        />
 
-      <p className="mt-5 text-center text-slate-400">
-        Professional Portfolio v1.0
-      </p>
-    </div>
+        <div className="flex justify-center">
+          <Button>
+            Download Resume
+          </Button>
+        </div>
+      </Container>
+    </main>
   );
 };
 
