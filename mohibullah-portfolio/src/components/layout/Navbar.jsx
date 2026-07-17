@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import Container from "../common/Container";
 
@@ -27,27 +27,23 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "bg-slate-950/80 backdrop-blur-xl border-b border-white/10"
+          ? "border-b border-white/10 bg-slate-950/80 backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
       <Container className="flex items-center justify-between py-5">
-
-        <a
-          href="#home"
-          className="text-2xl font-bold tracking-wide"
-        >
+        <a href="#home" className="text-2xl font-bold tracking-wide">
           Mohibullah
         </a>
 
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden gap-8 md:flex">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-slate-300 hover:text-blue-500 transition"
+              className="text-slate-300 transition hover:text-blue-500"
             >
               {item.label}
             </a>
@@ -55,16 +51,15 @@ const Navbar = () => {
         </nav>
 
         <button
-          onClick={() => setIsOpen(!isOpen)}
           className="md:hidden"
+          onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-
       </Container>
 
       {isOpen && (
-        <div className="md:hidden border-t border-white/10 bg-slate-900">
+        <div className="border-t border-white/10 bg-slate-900 md:hidden">
           {navItems.map((item) => (
             <a
               key={item.label}
