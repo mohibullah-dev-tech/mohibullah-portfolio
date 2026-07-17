@@ -1,15 +1,11 @@
 import Navbar from "./components/layout/Navbar";
+import Hero from "./sections/hero/Hero";
 
 const App = () => {
   return (
     <>
       <Navbar />
-
-      <main className="pt-28 text-center">
-        <h1 className="text-5xl font-bold">
-          Portfolio Coming Soon 🚀
-        </h1>
-      </main>
+      <Hero />
     </>
   );
 };
