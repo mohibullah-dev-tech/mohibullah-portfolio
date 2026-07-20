@@ -6,6 +6,7 @@ import Projects from "./sections/projects/Projects";
 import Experience from "./sections/experience/Experience";
 import Education from "./sections/education/Education";
 import Certifications from "./sections/certifications/Certifications";
+import Contact from "./sections/contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Education />
       <Certifications />
+      <Contact />
     </>
   );
 }
