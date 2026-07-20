@@ -61,19 +61,19 @@ const Skills = () => {
                   <span
                     key={skill}
                     className="
-rounded-full
-border
-border-white/10
-bg-slate-800/80
-px-4
-py-2
-text-sm
-transition-all
-duration-300
-hover:scale-105
-hover:border-blue-500
-hover:bg-blue-600
-"
+                    rounded-full
+                    border
+                    border-white/10
+                    bg-slate-800/80
+                    px-4
+                    py-2
+                    text-sm
+                    transition-all
+                    duration-300
+                    hover:scale-105
+                    hover:border-blue-500
+                    hover:bg-blue-600
+                    "
                   >
                     {skill}
                   </span>
