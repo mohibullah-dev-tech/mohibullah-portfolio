@@ -1,6 +1,7 @@
 import Container from "../../components/common/Container";
 import { skills } from "../../data/skillsData";
 import { FaCode, FaServer, FaTools } from "react-icons/fa";
+import SectionTitle from "../../components/common/SectionTitle";
 
 const getCategoryIcon = (category) => {
   switch (category) {
@@ -22,16 +23,11 @@ const Skills = () => {
   return (
     <section id="skills" className="py-28">
       <Container>
-        <div className="mb-16 text-center">
-          <span className="font-semibold text-blue-400">MY SKILLS</span>
-
-          <h2 className="mt-4 text-5xl font-bold">Technologies I Use</h2>
-
-          <p className="mt-6 text-slate-400">
-            Modern technologies that I use to build scalable and responsive web
-            applications.
-          </p>
-        </div>
+        <SectionTitle
+          badge="MY SKILLS"
+          title="Technologies I Use"
+          subtitle="Modern technologies that I use to build scalable and responsive web applications."
+        />
 
         <div className="grid gap-8 md:grid-cols-3">
           {skills.map((group) => (

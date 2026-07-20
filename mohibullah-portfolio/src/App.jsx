@@ -7,6 +7,8 @@ import Experience from "./sections/experience/Experience";
 import Education from "./sections/education/Education";
 import Certifications from "./sections/certifications/Certifications";
 import Contact from "./sections/contact/Contact";
+import Footer from "./sections/footer/Footer";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Education />
       <Certifications />
       <Contact />
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }
